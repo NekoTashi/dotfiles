@@ -1,0 +1,14 @@
+# -- Python simple server
+function server() {
+    local port="${1:-8000}"
+    open "http://localhost:${port}/"
+    python -m http.server "${port}"
+}
+
+# -- Make a method requests
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+    alias "${method}"="lwp-request -m '${method}'"
+done
+
+# -- Add local changes
+[ -f ".functions.local" ] && source ".functions.local"

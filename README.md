@@ -1,11 +1,13 @@
 Nktsh's Dotfiles
 ================
 
-Just source .bash_profile to load dotfiles.
+**Just source .bash_profile to load dotfiles.**
 
 Dotfiles List
 -------------
 
-- .aliases
-- .exports
-- .functions
+```
+.aliases
+.exports
+.functions
+```

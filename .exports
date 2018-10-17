@@ -1,0 +1,10 @@
+# -- Dependencies env
+export EDITOR="subl"
+export HIST_FORMAT="%Y-%m-%d %T"
+
+# -- Extend history file size
+export HISTSIZE=
+export HISTFILESIZE=
+
+# -- Add local changes
+[ -f ".exports.local" ] && source ".exports.local"

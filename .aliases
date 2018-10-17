@@ -1,0 +1,39 @@
+# -- Virtualenv
+alias venv="python3 -m venv .venv"
+alias vac="source .venv/bin/activate"
+
+# -- Shortcuts
+alias d="cd ~/dotfiles"
+alias p="cd ~/playgrounds"
+alias p="cd ~/projects"
+
+# -- Network
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
+# -- Get week number
+alias week='date +%V'
+
+# -- Lock the screen
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# -- Edit hosts folder
+alias hosts="sudo $EDITOR /etc/hosts"
+
+# -- Speedtest
+alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
+
+# -- Timestamped history command
+alias history="fc -t "$HIST_FORMAT" -il 1"
+
+# -- Open Chrome
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
+# -- Reload terminal
+alias reload="exec ${SHELL} -l"
+
+# -- Print paths
+alias path='echo -e ${PATH//:/\\n}'
+
+# -- Add local changes
+[ -f ".aliases.local" ] && source ".aliases.local"
