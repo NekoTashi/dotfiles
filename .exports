@@ -7,4 +7,4 @@ export HISTSIZE=
 export HISTFILESIZE=
 
 # -- Add local changes
-[ -f ".exports.local" ] && source ".exports.local"
+[ -f "${DOTFILES_PATH}/.exports.local" ] && source "${DOTFILES_PATH}/.exports.local"

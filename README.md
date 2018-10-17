@@ -1,7 +1,9 @@
 Nktsh's Dotfiles
 ================
 
-**Just source .bash_profile to load dotfiles.**
+
+- Default dotfile directory is `${HOME}/dotfiles/`
+- **Just source .bash_profile to load dotfiles.**
 
 Dotfiles List
 -------------

@@ -11,4 +11,4 @@ for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 done
 
 # -- Add local changes
-[ -f ".functions.local" ] && source ".functions.local"
+[ -f "${DOTFILES_PATH}/.functions.local" ] && source "${DOTFILES_PATH}/.functions.local"

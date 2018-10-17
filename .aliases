@@ -3,9 +3,9 @@ alias venv="python3 -m venv .venv"
 alias vac="source .venv/bin/activate"
 
 # -- Shortcuts
-alias d="cd ~/dotfiles"
-alias p="cd ~/playgrounds"
-alias p="cd ~/projects"
+alias d="cd ${HOME}/dotfiles"
+alias p="cd ${HOME}/projects"
+alias play="cd ${HOME}/playgrounds"
 
 # -- Network
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -18,13 +18,13 @@ alias week='date +%V'
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # -- Edit hosts folder
-alias hosts="sudo $EDITOR /etc/hosts"
+alias hosts="sudo ${EDITOR} /etc/hosts"
 
 # -- Speedtest
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 # -- Timestamped history command
-alias history="fc -t "$HIST_FORMAT" -il 1"
+alias history="fc -t "${HIST_FORMAT}" -il 1"
 
 # -- Open Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
@@ -36,4 +36,4 @@ alias reload="exec ${SHELL} -l"
 alias paths='echo -e ${PATH//:/\\n}'
 
 # -- Add local changes
-[ -f ".aliases.local" ] && source ".aliases.local"
+[ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
