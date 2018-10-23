@@ -27,13 +27,13 @@ alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 alias history="fc -t "${HIST_FORMAT}" -il 1"
 
 # -- Open Chrome
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # -- Reload terminal
 alias reload="exec ${SHELL} -l"
 
 # -- Print paths
-alias paths='echo -e ${PATH//:/\\n}'
+alias paths="echo -e ${PATH//:/\\n}""
 
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
