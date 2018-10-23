@@ -1,10 +1,6 @@
 # -- Dependencies env
-export EDITOR="subl"
-export HIST_FORMAT="%Y-%m-%d %T"
-
-# -- Extend history file size
-export HISTSIZE=
-export HISTFILESIZE=
+export EDITOR="code"
+export HIST_FORMAT="'%Y-%m-%d %T'"
 
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.exports.local" ] && source "${DOTFILES_PATH}/.exports.local"
