@@ -33,7 +33,7 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias reload="exec ${SHELL} -l"
 
 # -- Print paths
-alias paths="echo -e ${PATH//:/\\n}"
+alias paths='echo -e ${PATH//:/\\n}'
 
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
