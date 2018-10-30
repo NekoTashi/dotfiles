@@ -32,8 +32,10 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 # -- Reload terminal
 alias reload="exec ${SHELL} -l"
 
-# -- Print paths
+# -- Print paths, aliases and functions
 alias paths='echo -e ${PATH//:/\\n}'
+alias aliases="alias | sed 's/=.*//'"
+alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
 
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
