@@ -1,5 +1,6 @@
 # -- Dependencies env
 export EDITOR="code"
+export HISTSIZE=10000000
 export HIST_FORMAT="'%Y-%m-%d %T'"
 
 # -- Add local changes
