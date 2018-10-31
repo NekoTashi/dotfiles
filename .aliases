@@ -3,8 +3,8 @@ alias venv="python3 -m venv .venv"
 alias vac="source .venv/bin/activate"
 
 # -- Shortcuts
-alias d="cd ${HOME}/dotfiles"
-alias p="cd ${HOME}/projects"
+alias dot="cd ${HOME}/dotfiles"
+alias pro="cd ${HOME}/projects"
 alias play="cd ${HOME}/playgrounds"
 
 # -- Network
@@ -36,6 +36,9 @@ alias reload="exec ${SHELL} -l"
 alias paths='echo -e ${PATH//:/\\n}'
 alias aliases="alias | sed 's/=.*//'"
 alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
+
+# -- Generate id-rsa ssh-key
+alias keygen='ssh-keygen -t rsa -b 4096 -f id_rsa_$(openssl rand -base64 500 | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1) -q -N ""'
 
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
