@@ -40,5 +40,15 @@ alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
 # -- Generate id-rsa ssh-key
 alias keygen='ssh-keygen -t rsa -b 4096 -f id_rsa_$(openssl rand -base64 500 | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1) -q -N ""'
 
+# -- Docker aliases
+alias dps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}\t{{.Ports}}"'
+alias dpsf="docker ps --format '{{ json .}}' | jq ."
+
+# -- Best way to show all file sizes
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+
+# -- K8s
+alias k="kubectl"
+
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
