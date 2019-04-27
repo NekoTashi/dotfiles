@@ -49,6 +49,7 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 # -- K8s
 alias k="kubectl"
+alias g="gcloud"
 
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
