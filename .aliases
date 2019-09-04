@@ -51,5 +51,18 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias k="kubectl"
 alias g="gcloud"
 
+# -- Fix Pyenv
+# alias pyenv='LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig /usr/local/opt/sqlite/lib/pkgconfig" pyenv'
+
+# -- Git Aliases
+# https://twitter.com/curioman2/status/1129046866455347206
+alias glog="\git log --color --all --date-order --decorate --dirstat=lines,cumulative --stat | sed 's/\([0-9] file[s]\? .*)$\)/\1\n_______\n-------/g' | \less -R"
+
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
+
+# -- Using watch command with aliases
+alias watch='watch '
+
+# -- Place where we save important resources
+alias notes="code ~/notes/README.md"
