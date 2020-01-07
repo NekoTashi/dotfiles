@@ -6,6 +6,7 @@ alias vac="source .venv/bin/activate"
 alias dot="cd ${HOME}/dotfiles"
 alias pro="cd ${HOME}/projects"
 alias play="cd ${HOME}/playgrounds"
+alias books="code ${HOME}/books/"
 
 # -- Network
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -53,7 +54,8 @@ alias g="gcloud"
 
 # -- Git Aliases
 # https://twitter.com/curioman2/status/1129046866455347206
-alias glog="\git log --color --all --date-order --decorate --dirstat=lines,cumulative --stat | sed 's/\([0-9] file[s]\? .*)$\)/\1\n_______\n-------/g' | \less -R"
+# alias glog="\git log --color --all --date-order --decorate --dirstat=lines,cumulative --stat | sed 's/\([0-9] file[s]\? .*)$\)/\1\n_______\n-------/g' | \less -R"
+alias glog="git log --oneline --decorate --graph --all"
 
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.aliases.local" ] && source "${DOTFILES_PATH}/.aliases.local"
@@ -63,3 +65,6 @@ alias watch='watch '
 
 # -- Place where we save important resources
 alias notes="code ~/notes/README.md"
+
+# -- lazydocker
+alias lzd='lazydocker'

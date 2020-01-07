@@ -1,7 +1,13 @@
 # -- Dependencies env
-export EDITOR="code"
+export EDITOR="nano"
 export HISTSIZE=10000000
 export HIST_FORMAT="'%Y-%m-%d %T'"
 
 # -- Add local changes
 [ -f "${DOTFILES_PATH}/.exports.local" ] && source "${DOTFILES_PATH}/.exports.local"
+
+# -- autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && source /usr/local/etc/profile.d/autojump.sh
+
+# -- fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
