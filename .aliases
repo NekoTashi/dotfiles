@@ -68,3 +68,6 @@ alias notes="code ~/notes/README.md"
 
 # -- lazydocker
 alias lzd='lazydocker'
+
+# -- lazygit
+alias lg='lazygit'
