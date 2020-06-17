@@ -1,6 +1,8 @@
 # -- Dependencies env
 export EDITOR="nano"
-export HISTSIZE=10000000
+export HISTSIZE=1000000000000
+export HISTFILESIZE=1000000000000
+
 export HIST_FORMAT="'%Y-%m-%d %T'"
 
 # -- Add local changes
