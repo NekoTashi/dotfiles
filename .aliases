@@ -9,7 +9,7 @@ alias play="cd ${HOME}/playgrounds"
 alias books="code ${HOME}/books/"
 
 # -- Network
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # -- Get week number
