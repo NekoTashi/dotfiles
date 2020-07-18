@@ -65,6 +65,7 @@ alias watch='watch '
 
 # -- Place where we save important resources
 alias notes="code ~/notes/README.md"
+alias docs="code ~/docs/"
 
 # -- lazydocker
 alias lzd='lazydocker'
