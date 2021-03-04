@@ -5,6 +5,7 @@ alias vac="source .venv/bin/activate"
 # -- Shortcuts
 alias dot="cd ${HOME}/dotfiles"
 alias pro="cd ${HOME}/projects"
+alias projects="cd ${HOME}/env-projects"
 alias play="cd ${HOME}/playgrounds"
 alias books="code ${HOME}/books/"
 
