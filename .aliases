@@ -3,10 +3,10 @@ alias venv="python3 -m venv .venv"
 alias vac="source .venv/bin/activate"
 
 # -- Shortcuts
-alias dot="cd ${HOME}/dotfiles"
 alias pro="cd ${HOME}/projects"
 alias projects="cd ${HOME}/env-projects"
 alias play="cd ${HOME}/playgrounds"
+alias dot="code ${HOME}/dotfiles"
 alias books="code ${HOME}/books/"
 
 # -- Network
@@ -73,3 +73,6 @@ alias lzd='lazydocker'
 
 # -- lazygit
 alias lg='lazygit'
+
+# -- Open all files changed in the current branch in git
+alias last_changed='code $(git diff-tree --no-commit-id --name-only -r HEAD)'
